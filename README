@@ -1,0 +1,26 @@
+﻿TPFlow
+│
+├── Models
+│   ├── Entidades (Classes representando entidades de dados)
+│   └── Servicos (Implementações de lógica de negócios)
+│
+├── Views
+│   ├── Formularios (Arquivos .cs ou .designer.cs dos formulários)
+│   └── UserControls (Controles personalizados, se houver)
+│
+├── Controllers
+│   ├── Controladores (Classes que atuam como controladores no padrão MVC)
+│   └── EventHandlers (Classes que lidam com eventos específicos)
+│
+├── Services
+│   ├── Interfaces (Interfaces para serviços)
+│   └── Implementacoes (Implementações concretas dos serviços)
+│
+├── Repositories (Se estiver usando acesso a dados)
+│
+├── DI (Configuração de Injeção de Dependência)
+│   └── DependencyContainer.cs (Configuração do container DI)
+│
+├── Utils (Classe utilitárias, se necessário)
+│
+└── Program.cs (Ponto de entrada do aplicativo)

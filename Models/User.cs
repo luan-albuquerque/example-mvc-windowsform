@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TPFlow.Models
+namespace examplemvcwindowsform.Models
 {
     public class User
     {

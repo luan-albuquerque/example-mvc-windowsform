@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TPFlow.Models;
+using examplemvcwindowsform.Models;
 
-namespace TPFlow.Services.Contract
+namespace examplemvcwindowsform.Services.Contract
 {
     public interface IAuthService
     {

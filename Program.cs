@@ -1,10 +1,10 @@
-using TPFlow.Controllers;
-using TPFlow.Services.Contract;
-using TPFlow.Services;
-using TPFlow.Views;
+using examplemvcwindowsform.Controllers;
+using examplemvcwindowsform.Services.Contract;
+using examplemvcwindowsform.Services;
+using examplemvcwindowsform.Views;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace TPFlow
+namespace examplemvcwindowsform
 {
     static class Program
     {
@@ -15,10 +15,10 @@ namespace TPFlow
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
 
-                // Configuração do serviço e injeção de dependência
+                // Configuraï¿½ï¿½o do serviï¿½o e injeï¿½ï¿½o de dependï¿½ncia
                 var serviceProvider = ConfigureServices();
 
-                // Resolução do formulário principal e execução da aplicação
+                // Resoluï¿½ï¿½o do formulï¿½rio principal e execuï¿½ï¿½o da aplicaï¿½ï¿½o
                 using (var loginForm = serviceProvider.GetRequiredService<LoginForm>())
                 {
                     Application.Run(loginForm);
@@ -29,13 +29,13 @@ namespace TPFlow
             {
                 var services = new ServiceCollection();
 
-                // Registro de serviços e implementações no container DI
+                // Registro de serviï¿½os e implementaï¿½ï¿½es no container DI
                 services.AddTransient<IAuthService, AuthService>();
                 services.AddTransient<LoginController>();
-                // Registro do formulário principal no container DI
+                // Registro do formulï¿½rio principal no container DI
                 services.AddTransient<LoginForm>();
 
-                // Configuração do container e construção do provedor de serviços
+                // Configuraï¿½ï¿½o do container e construï¿½ï¿½o do provedor de serviï¿½os
                 return services.BuildServiceProvider();
             }
         }

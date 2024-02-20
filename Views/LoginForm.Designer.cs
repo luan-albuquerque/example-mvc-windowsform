@@ -1,4 +1,4 @@
-﻿namespace TPFlow.Views
+﻿namespace examplemvcwindowsform.Views
 {
     partial class LoginForm
     {

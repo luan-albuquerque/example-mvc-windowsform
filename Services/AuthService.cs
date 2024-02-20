@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TPFlow.Models;
-using TPFlow.Services.Contract;
+using examplemvcwindowsform.Models;
+using examplemvcwindowsform.Services.Contract;
 
-namespace TPFlow.Services
+namespace examplemvcwindowsform.Services
 {
 
     // AuthService.cs
